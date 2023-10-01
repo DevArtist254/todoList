@@ -6,6 +6,141 @@
     <title>To do list</title>
 </head>
 <body>
-    <h1>Hello world.</h1>
+    <main>
+        <nav>
+            <h1>Todo List</h1>
+            <a href="./setup.html">Setup</a>
+        </nav>
+        <div id="dateCurrent">
+            October 1 2023
+        </div>
+        <div class="counter">
+            <div class="dueCounter">
+                <span class="dueCounter__title">Due :</span>
+                <span class="dueCounter__count">1</span>
+            </div>
+            <div class="overDueCounter">
+                <span class="overDueCounter__title">Overdue :</span>
+                <span class="overDueCounter__count">3</span>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>Done</th>
+                <th>Description</th>
+                <th>Due date</th>
+                <th>Priority</th>
+                <th>Assigned to</th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="complete" id="complete">
+                        <option value="done">Done</option>
+                        <option value="ongoing">Ongoing</option>
+                    </select>
+                </td>
+                <td>Clean room</td>
+                <td>10/1/2023</td>
+                <td>
+                    <select name="complete" id="complete">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="complete" id="complete">
+                        <option value="dad">Dad</option>
+                        <option value="mom">Mom</option>
+                        <option value="child">Child</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="complete" id="complete">
+                        <option value="done">Done</option>
+                        <option value="ongoing">Ongoing</option>
+                    </select>
+                </td>
+                <td>Clean room</td>
+                <td>10/1/2023</td>
+                <td>
+                    <select name="complete" id="complete">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="complete" id="complete">
+                        <option value="dad">Dad</option>
+                        <option value="mom">Mom</option>
+                        <option value="child">Child</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="complete" id="complete">
+                        <option value="done">Done</option>
+                        <option value="ongoing">Ongoing</option>
+                    </select>
+                </td>
+                <td>Clean room</td>
+                <td>10/1/2023</td>
+                <td>
+                    <select name="complete" id="complete">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="complete" id="complete">
+                        <option value="dad">Dad</option>
+                        <option value="mom">Mom</option>
+                        <option value="child">Child</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="complete" id="complete">
+                        <option value="done">Done</option>
+                        <option value="ongoing">Ongoing</option>
+                    </select>
+                </td>
+                <td>Clean room</td>
+                <td>10/1/2023</td>
+                <td>
+                    <select name="complete" id="complete">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="complete" id="complete">
+                        <option value="dad">Dad</option>
+                        <option value="mom">Mom</option>
+                        <option value="child">Child</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <form>
+            <div class="desc">
+                <label for="description">Description</label>
+                <input type="text" id="description">
+            </div>
+            <div class="dueDate">
+                <label for="dueDate">Due date</label>
+                <input type="date" id="dueDate">
+            </div>
+            <input type="submit">
+        </form>
+    </main>
 </body>
 </html>
