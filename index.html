@@ -1,99 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do list</title>
-</head>
-<body>
-    <main>
-        <nav>
-            <h1>Todo List</h1>
-            <a href="./setup.html">Setup</a>
-        </nav>
-        <div id="dateCurrent">
-            October 1 2023
-        </div>
-        <div class="counter">
-            <div class="dueCounter">
-                <span class="dueCounter__title">Due :</span>
-                <span class="dueCounter__count">1</span>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>To do list</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<nav>
+			<h1 class="title">
+				Todo List
+				<span class="link">
+                    <a href="./setup.html">Setup</a>
+                </span>
+			</h1>
+		</nav>
+		<main>
+            <div id="title-card">
+                <h2 id="dateCurrent">October 1 2023</h2>
+                <div class="counter">
+                    <div class="dueCounter">
+                        <h2 class="dueCounter__title">Due :</h2>
+                        <h2 class="dueCounter__count">1</h2>
+                    </div>
+                    <div class="dueCounter">
+                        <h2 class="dueCounter__title">Overdue :</h2>
+                        <h2 class="dueCounter__count">3</h2>
+                    </div>
+                </div>
             </div>
-            <div class="overDueCounter">
-                <span class="overDueCounter__title">Overdue :</span>
-                <span class="overDueCounter__count">3</span>
-            </div>
-        </div>
-        <table>
-            <tr>
-                <th>Done</th>
-                <th>Description</th>
-                <th>Due date</th>
-                <th>Priority</th>
-                <th>Assigned to</th>
-            </tr>
-            <tr>
-                <td>
-                    <select name="complete" id="complete">
-                        <option value="done">Done</option>
-                        <option value="ongoing">Ongoing</option>
-                    </select>
-                </td>
-                <td>Clean room</td>
-                <td>10/1/2023</td>
-                <td>
-                    <select name="priority" id="Priority">
-                        <option value="high">High</option>
-                        <option value="medium">Medium</option>
-                        <option value="low">Low</option>
-                    </select>
-                </td>
-                <td>
-                    <select name="assignedTo" id="assignedTo">
-                        <option value="dad">Dad</option>
-                        <option value="mom">Mom</option>
-                        <option value="child">Child</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <select name="complete" id="complete">
-                        <option value="done">Done</option>
-                        <option value="ongoing">Ongoing</option>
-                    </select>
-                </td>
-                <td>Clean room</td>
-                <td>10/1/2023</td>
-                <td>
-                    <select name="priority" id="Priority">
-                        <option value="high">High</option>
-                        <option value="medium">Medium</option>
-                        <option value="low">Low</option>
-                    </select>
-                </td>
-                <td>
-                    <select name="assignedTo" id="assignedTo">
-                        <option value="dad">Dad</option>
-                        <option value="mom">Mom</option>
-                        <option value="child">Child</option>
-                    </select>
-                </td>
-            </tr>
-        </table>
 
-        <form id="form">
-            <div class="desc">
-                <label for="description">Description</label>
-                <input type="text" id="description">
-            </div>
-            <div class="dueDate">
-                <label for="dueDate">Due date</label>
-                <input type="date" id="dueDate">
-            </div>
-            <input type="submit">
-        </form>
-    </main>
-    <script src="./script.js"></script>
-</body>
+			<table>
+                <thead>
+                    <tr>
+                        <th>Done</th>
+                        <th>Description</th>
+                        <th>Due date</th>
+                        <th>Priority</th>
+                        <th>Assigned to</th>
+                    </tr>
+                </thead>
+				<tr>
+                    <td>
+                        <select name="complete" id="complete">
+                            <option value="done">Done</option>
+                            <option value="ongoing">Ongoing</option>
+                        </select>
+                    </td>
+                    <td>Clean room</td>
+                    <td>10/1/2023</td>
+                    <td>
+                        <select name="priority" id="Priority">
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="assignedTo" id="assignedTo">
+                            <option value="dad">Dad</option>
+                            <option value="mom">Mom</option>
+                            <option value="child">Child</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="complete" id="complete">
+                            <option value="done">Done</option>
+                            <option value="ongoing">Ongoing</option>
+                        </select>
+                    </td>
+                    <td>Clean room</td>
+                    <td>10/1/2023</td>
+                    <td>
+                        <select name="priority" id="Priority">
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="assignedTo" id="assignedTo">
+                            <option value="dad">Dad</option>
+                            <option value="mom">Mom</option>
+                            <option value="child">Child</option>
+                        </select>
+                    </td>
+                </tr>
+			</table>
+
+			<form id="form">
+                <div class="desc">
+                    <label for="description">Description</label>
+                    <input type="text" id="description">
+                </div>
+                <div class="dueDate">
+                    <label for="dueDate">Due date</label>
+                    <input type="date" id="dueDate">
+                </div>
+                <input type="submit">
+            </form>
+		</main>
+        <script src="./script.js"></script>
+	</body>
 </html>
