@@ -6,3 +6,100 @@
 	margin: 0;
 	padding: 0;
 }
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+}
+
+nav {
+	background-color: #611515;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.274);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	padding: 10px 50px;
+	margin-bottom: 20px;
+	display: "block"
+}
+
+.title {
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.link {
+	text-decoration: none;
+}
+
+main {
+	margin-top: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#title-card{
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.274);
+	background-color: #611515;
+	margin-bottom: 50px;
+}
+
+#dateCurrent {
+	color: #f2f2f2;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.counter{
+	display: flex;
+	justify-content: left;
+	text-align: left;
+}
+
+.counter-wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+
+.dueCounter{
+	display: flex;
+	justify-content: start;
+	text-align: left;
+}
+
+.dueCounter__title{
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #f2f2f2;
+	margin-right: 10px;
+}
+
+.dueCounter__count{
+	font-weight: 700;
+	color: #f2f2f2;
+}
+
+table {
+    width: 100%;
+}
+
+thead{
+	background-color: #611515;
+	color: #fff;
+}
+
+th, td {
+	padding: 15px;
+	text-align: left;
+	height: "50px"
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
